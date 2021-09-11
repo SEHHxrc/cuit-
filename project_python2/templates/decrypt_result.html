@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>decrypt</title>
+    <style type="text/css">
+        .divForm{
+            position: absolute;
+            width: 300px;
+            height: 200px;
+            text-align: center;
+            top: 40%;
+            left: 50%;
+            margin-top: -200px;
+            margin-left: -150px;
+        }
+        </style>
+        <style>
+        body{
+            background-image: url({{url_for('static', filename='1.jpeg')}});
+            background-attachment: fixed;
+            background-position: bottom;
+            background-repeat: no-repeat;
+            background-size: cover;
+        }
+        </style>
+</head>
+<body>
+    <div class="divForm">
+        <table border="1" width="323">
+            <tr>
+                <td>Decrypted message:</td>
+                <td>{{message}}</td>
+            </tr>
+            <tr>
+                <td>Key:</td>
+                <td>{{key}}</td>
+            </tr>
+        </table>
+        <a href="{{url_for('encrypt')}}">encrypt</a>
+    </div>
+</body>
+</html>
