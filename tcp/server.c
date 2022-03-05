@@ -50,7 +50,6 @@ int main(int argc, char const *argv[])
 	}
 
 	sendfile(connectfd);
-	//send(connectfd, "I was born king", 15, 0);
 
 	printf("\nsend over\n");
 
